@@ -1,0 +1,840 @@
+p, h1, h3,h4, h5, a {
+  font-family: "Helvetic Neue", Helvetica, Arial;
+}
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.mainFrame{
+  width: 1150px;
+  margin: 0 auto;
+}
+
+
+/* ==========================================================================
+Navigation
+========================================================================== */
+nav {
+  position: absolute;
+  top: 29px;
+  left: 627px;
+
+  width: 219px;
+  margin-top: -1px;
+
+  background-color: #242830;
+}
+
+nav ul {
+  padding: 0;
+
+  list-style: none;
+}
+
+nav ul li {
+  position: relative;
+
+  display: block;
+
+  padding-left: 0;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+}
+
+nav ul li:last-child {
+  border: none;
+}
+
+nav ul li a {
+  position: relative;
+
+  display: block;
+
+  padding: 8px;
+  padding-left: 0;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  text-decoration: none;
+
+  color: white;
+}
+
+#nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+#nav-toggle {
+  padding: 10px 35px 16px 0px;
+
+  cursor: pointer;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  position: absolute;
+
+  display: block;
+
+  width: 35px;
+  height: 5px;
+
+  content: '';
+  cursor: pointer;
+
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  background: #353535;
+
+  -o-border-radius: 1px;
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  top: 10px;
+
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  -ms-transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.navicon {
+  position: relative;
+
+  height: 26px;
+  margin-top: 10px;
+}
+
+.indicator {
+  position: absolute;
+  right: 0 !important;
+}
+
+.pull {
+  display: none;
+}
+
+/* ==========================================================================
+Header
+========================================================================== */
+
+header {
+  width: 100%;
+  height: 56px;
+  margin: 0 auto;
+
+  background: #ed6300;
+}
+
+
+.menu__wrapper {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.wrapper__topMenu{
+  position: fixed;
+  z-index:5;
+
+  width: 100%;
+  height: 56px;
+
+  background: #ed6300;
+}
+
+.wrapper__logo {
+  float: left;
+
+  width: 180px;
+}
+
+.menu__wrapper img {
+  width: 178px;
+  height: 59px;
+}
+
+.mainMenu__wrapper {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+
+.topMenu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.topMenu li {
+  float: left;
+
+  padding: 15px 0 15px 0px;
+
+  border-left: 2px solid #e174b1;
+  background: linear-gradient(to top, #a6206a, #af3779);
+}
+
+.topMenu li:nth-child(1){
+  border-left:none;
+  border-radius: 0 0 0 10px;
+}
+
+.topMenu li:nth-child(8){
+  border-left:none;
+}
+
+.topMenu li:nth-child(7){
+  border-radius: 0 0 10px 0;
+}
+
+
+.topMenu li:hover {
+  background: linear-gradient(to top, #f2a585, #e66929);
+}
+
+.topMenu > li > a {
+  padding: 10px 10px;
+
+  text-decoration: none;
+
+  color: #fff;
+
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 18px;
+}
+
+#sideMenu {
+  float: right;
+
+  width: 54px;
+  margin: -12px auto;
+  padding-right: 30px;
+
+  cursor: pointer;
+}
+
+.wrapper__icon {
+  color: #fff;
+
+  font-size: 45px;
+}
+
+/* ==========================================================================
+TagLine
+========================================================================== */
+
+.tagline {
+  width: 100%;
+  height:250px;
+
+  background: #5d5c5c;
+}
+
+.tagline p {
+  padding-top: 36px;
+
+  text-align: center;
+
+  color: #fff;
+
+  font-size: 31px;
+}
+
+.tagline form{
+  width: 500px;
+  margin: 20px auto;
+}
+
+.tagline input{
+  background: linear-gradient(to top,#fff  ,#c6c4bc);
+
+  font-size: 20px;
+}
+
+.tagline .two{
+  width: 500px;
+}
+
+#sendContactClient{
+  display: block;
+
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 18px;
+
+  color: white;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(to top, #a6206a, #af3779);
+
+  font-family: "Helvetic Neue", Helvetica, Arial;
+}
+
+#sendContactClient:hover {
+  background: linear-gradient(to top, #f2a585, #e66929);
+}
+
+
+
+/* ==========================================================================
+CanDo
+========================================================================== */
+.canDo {
+  width: 100%;
+  min-height: 400px;
+
+  text-align: center;
+}
+
+.canDo h1{
+  color: #ed6300;
+}
+
+.wrapper__parallax {
+  position: relative;
+
+  width: 100%;
+  min-height: 400px;
+
+  background: rgba(27, 8, 45, 0.5);
+}
+
+.parallax-window {
+  height: 400px;
+
+  background: transparent;
+}
+
+.wrapper__canDoIcon {
+  position: absolute;
+  top: 50%;
+
+  width: 300px;
+  min-height: 300px;
+  margin-top: -125px;
+}
+
+.wrapper__canDoIcon p {
+  color: white;
+
+  font-size: 20px;
+}
+
+#web {
+  left: 50%;
+
+  margin-left: -450px;
+}
+
+#tester {
+  left: 50%;
+
+  margin-left: 150px;
+}
+
+.icon {
+  position: relative;
+
+  display: block;
+
+  width: 175px;
+  max-width: 100%;
+  height: 175px;
+  margin: 0 auto 50px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ed6300;
+
+  font-size: 55px;
+  line-height: 175px;
+
+  -o-border-radius: 50%;
+}
+
+/* ==========================================================================
+Our team
+http://mvcreative.ru/blog/slajding_novostej_ucoz/2013-01-17-28-0-2
+========================================================================== */
+
+.ourTeam {
+  width: 100%;
+  height: 480px;
+
+  text-align: center;
+
+  background: #a6206a;
+}
+
+.ourTeam h1{
+  color: #fff;
+}
+/* Carousel */
+.container_car {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.clear {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  overflow: hidden;
+
+  width: 0;
+  height: 0;
+}
+
+.carousel {
+  position: relative;
+
+  margin: 0 auto;
+  padding: 20px;
+  padding-right: 51px;
+  padding-left: 70px;
+
+  background: white;
+}
+
+.carousel, .carousel_mask {
+  width: 1046px;
+}
+
+.carousel_btn_left, .carousel_btn_right {
+  position: absolute;
+  top: 50px;
+
+  display: none;
+
+  width: 62px;
+  height: 76px;
+
+  background: url("../img/slider-left.png") no-repeat;
+}
+
+.carousel_btn_left {
+  left: -13px;
+}
+
+.carousel_btn_right {
+  right: -15px;
+
+  background: url("../img/slider-right.png") no-repeat 0px 0px;
+}
+
+.carousel_btn_left:active, .carousel_btn_right:active {
+  margin-top: 1px;
+}
+
+.carousel_btn_left, .carousel_btn_right {
+  display:block !important;
+}
+
+.carousel_mask {
+  position: relative;
+
+  overflow: hidden !important;
+}
+
+
+.carousel ul.carousel_items {
+  position: relative;
+
+  margin: 0px;
+}
+
+.carousel ul.carousel_items li {
+  float: left;
+
+  margin: 0 8px 0 8px;
+}
+
+.carousel ul.carousel_items li img {
+  width: 320px;
+  height: 300px;
+}
+
+.img_frame {
+  display: inline-block;
+
+  margin: 0px;
+  padding: 5px;
+
+  border: 1px solid #c0c1c2;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+
+  line-height: 0px;
+}
+
+.img_frame .container_car ul {
+  position: absolute;
+}
+
+.img_frame .container_car ul li {
+  overflow: hidden;
+
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img_frame a.description {
+  display: block;
+
+  padding: 30px 2px;
+
+  text-decoration: none;
+
+  color: #555;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.img_frame a.description h4 {
+  padding: 0px;
+}
+
+/* ==========================================================================
+How it works
+========================================================================== */
+.howItWorks {
+  width: 100%;
+  min-height: 400px;
+
+  text-align: center;
+}
+
+.howItWorks .mainFrame{
+  padding-bottom: 20px;
+}
+
+.howItWorks ol {
+  margin-top: 17px;
+  margin-left: 50px;
+
+  text-align: left;
+}
+
+.howItWorks ol li {
+  margin-left: 35px;
+}
+
+.starPoint, .doubleStarPoint {
+  list-style-type: none;
+}
+
+.starPoint li:before {
+  margin-left: -35px;
+
+  content: "* ";
+}
+
+.doubleStarPoint li:before {
+  margin-left: -35px;
+
+  content: "**";
+}
+
+/* ==========================================================================
+Projects
+========================================================================== */
+.projects {
+  width: 100%;
+  min-height: 100px;
+
+  text-align: left;
+
+  background: aliceblue;
+}
+
+.projects__wrapper {
+  display: inline-block;
+
+  width: 100%;
+  margin-left: 40px;
+  padding-bottom: 20px;
+}
+
+.projects__wrapper li {
+  padding-top: 10px;
+
+  font-size: 20px;
+}
+
+.projects__wrapper li input {
+  margin-left: 20px;
+  padding: 7px;
+
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to top, #a6206a, #af3779);
+}
+
+.projects__wrapper li input:hover{
+  color: black;
+  background: linear-gradient(to top, #f2a585, #e66929);
+}
+
+/* ==========================================================================
+About us
+========================================================================== */
+.about {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  background: grey;
+}
+
+.contact__wrapper {
+  display: inline-block;
+
+  width: 200px;
+  height: 315px;
+  margin: 25px 13px 0px 13px;
+
+  background: white;
+}
+
+.contact--photo {
+  width: 190px;
+  height: 190px;
+  margin: 15px auto;
+}
+
+.contact--desc {
+  width: 200px;
+  height: 50px;
+  margin: 0px auto;
+}
+
+#fstContact .contact--photo {
+  background: url("../img/Hanna.png") no-repeat;
+  background-size: cover;
+}
+
+#scdContact .contact--photo {
+  background: url("../img/Daria.jpg") no-repeat;
+  background-size: cover;
+}
+
+#thdContact .contact--photo {
+  background: url("../img/Lidia.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* ==========================================================================
+Contacts
+========================================================================== */
+
+.contacts{
+  width: 100%;
+  height:200px;
+
+  background: url("../img/map.jpg");
+}
+
+.contacts .wrapper__contacts{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.contacts .wrapper__contacts div{
+  float: left;
+
+  height: 78px;
+  margin-top: 61px;
+  margin-right: 20px;
+
+  color: #f28934;
+
+  line-height: 20px;
+}
+
+.contacts .wrapper__contacts .social{
+  width: 200px;
+  height: 20px;
+  margin-top: 61px;
+}
+
+.contacts .social a{
+  color: #f28934;
+}
+
+.contacts .social ul li{
+ float: left;
+
+  margin-left: 10px;
+
+  list-style-type: none;
+}
+
+/* ==========================================================================
+Reviews
+========================================================================== */
+
+.reviews{
+  width: 100%;
+  min-height: 715px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  background: #ed6300;
+}
+
+.reviews .course{
+  color: #ed6300;
+}
+
+.reviews h1{
+  color: white;
+}
+
+.wrapper__reviews{
+  padding-bottom: 20px;
+}
+
+/* Carousel */
+
+.reviews .carousel ul.carousel_items li img{
+  width: 200px;
+  height: 200px;
+}
+.reviews .container_car{
+  margin: 15px auto;
+  margin-bottom: 25px;
+}
+
+.reviews .container_car ul{
+  width: 200px;
+  margin: 0 auto;
+
+  list-style-type: none;
+}
+
+.reviews .container_car ul li{
+  height: 200px;
+
+  border-radius: 100px;
+}
+
+.reviews-img_frame {
+  display: inline-block;
+
+  width: 320px;
+  height: 550px;
+  margin: 3px;
+  padding: 5px;
+
+  border: none;
+  border-bottom: 3px solid #ed6300;
+  background-color: #f8f8f8;
+  box-shadow:none;
+
+  line-height: 0px;
+}
+
+.reviews-img_frame p {
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  text-align: left;
+
+  line-height: 20px;
+}
+
+.reviews .sh{
+  display: none;
+  float: right;
+
+  margin: 20px 10px 0 0;
+
+  text-decoration: none;
+
+  color: #ed6300;
+}
+
+.reviews .sh:hover{
+  text-decoration: underline;
+
+  color: #0000cc;
+}
+
+.reviews .container-image{
+  overflow: hidden;
+
+  border-radius: 100px;
+  background: greenyellow;
+}
+
+.reviews ul.carousel_items li ul li {
+  margin: 0;
+}
